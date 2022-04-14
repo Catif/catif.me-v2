@@ -3,17 +3,20 @@
 
 :root{
   /* Classical Variable */
-  --color-background: hsl(0, 0%, 9%);
-  --color-text: hsl(0, 0%, 90%);
+  --color-background: hsla(0, 100%, 4%, 0.85);
+  --color-text: hsl(0, 100%, 96%);
   --size-text: 20px;
 
-  --color-link: hsl(0, 0%, 100%);
+  --color-link: hsl(0, 100%, 70%);
   --weight-link: 600;
 
   /* Navbar Variable */
-  --color-nav-text: hsl(0, 0%, 90%);
-  --color-nav-background: hsla(0, 0%, 8%);
-  --color-nav-shadow: hsla(0, 0%, 30%);
+  --color-nav-background: hsla(0, 100%, 4%, 0.85);
+  --color-nav-shadow: hsla(0, 0%, 100%, .25);
+
+  /* Navbar Container */
+  --color-container-background: hsla(0, 100%, 4%, 0.85);
+  --color-container-shadow: hsla(0, 0%, 100%, .25);
 
   /* ... Variable */
 }
@@ -34,10 +37,18 @@
 
 body {
   min-height: 100vh;
+
   color: var(--color-text);
-  background: var(--color-background);
   font-family: 'Anek Gujarati' ,Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  background: var(--color-background);
+  background-image: url(./pawel-czerwinski-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: contrast(130%);
+
+  padding-bottom: 30px;
 }
 
 a{
@@ -83,11 +94,10 @@ nav{
   align-items: center;
   gap: 150px;
   
-  width: 100vw;
+  width: 100%;
   height: 100px;
 
   background-color: var(--color-nav-background);
-  box-shadow: 0 2px 5px -3px var(--color-nav-shadow);
 }
 
 .nav-logo{
@@ -119,6 +129,83 @@ nav{
 
 
 
+
+
+
+
+
+/* ========================
+        Project Card
+======================== */
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 60px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 476px;
+  height: 300px;
+
+  background-color: var(--color-background);
+  border-radius: 20px;
+
+  transition: transform .2s ease;
+}
+
+.box:hover{
+  z-index: 1000;
+  transform: scale(1.1);
+}
+
+.box .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 60px;
+  width: 100%;
+
+  font-size: 15px;
+}
+
+.box .title div:first-child{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.box img{
+  width: 100%;
+  height: calc(100% - 60px);
+
+  border-radius: 0 0 20px 20px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================
       Classical classes
 ======================== */
@@ -129,21 +216,23 @@ nav{
 
   width: 1000px;
   
-  margin: auto;
-  margin-top: 20px;
+  margin: 30px auto;
   padding: 20px;
 
-  border: 1px solid red;
+  background-color: var(--color-container-background);
+  border-radius: 20px;
 }
 
 .content{
+  margin-top: 25px;
+
   width: 100%;
 }
 
 .raw{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .column{
@@ -157,7 +246,7 @@ nav{
   border: 1px solid #fff;
   border-radius: 4px;
 
-  background-color: hsl(0, 0%, 12%);
+  background-color: hsla(0, 0%, 0%, .3);
 }
 
 .game-pong .player{
@@ -172,9 +261,7 @@ nav{
   border-radius: 10px;
 
   animation-name: player;
-  animation-duration: 4s;
-  animation-delay: .1s;
-  animation-timing-function: linear;
+  animation-duration: 3.5s;
   animation-iteration-count: infinite;
 }
 
@@ -190,8 +277,7 @@ nav{
   left: 7px;
 
   animation-name: ball;
-  animation-duration: 4s;
-  animation-delay: .1s;
+  animation-duration: 3.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -207,8 +293,12 @@ nav{
   bottom: 5px;
   right: 5px;
 }
-.title{
-  margin-bottom: 20px;
+
+.game-pong .score{
+  position: absolute;
+
+  top: 0px;
+  left: 90px;
 }
 
 .link{
@@ -237,23 +327,20 @@ nav{
 
 
 
-
 /* ========================
       Animation classes
 ======================== */
 @keyframes player {
   0% {top: 2px}
-  25% {top: 74px}
   50% {top: 150px}
-  75% {top: 74px}
   100% {top: 2px}
 }
 
 @keyframes ball {
   0% {left: 7px; top: 30px}
-  25% {left: 175px; top: 74px}
+  25% {left: 175px; top: 90px}
   50% {left: 7px; top: 150px}
-  75% {left: 175px; top: 74px}
+  75% {left: 175px; top: 90px}
   100% {left: 7px; top: 30px}
 }
 
@@ -271,8 +358,11 @@ nav{
 
   width: 20px;
   height: 2px;
-  background-color: var(--color-nav-text);
-  transition: all .2s ease;
+
+  border-radius: 10px;
+
+  background-color: var(--color-text);
+  transition: all .15s ease;
 }
 
 .hover-underline:hover::after{
@@ -283,4 +373,49 @@ nav{
 .router-link-active.hover-underline:hover::after{
   width: 90%;
   height: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================================
+                    ScrollBar
+====================================================*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(0, 100%, 10%); 
+}
+::-webkit-scrollbar-track:active {
+  background: hsl(0, 100%, 20%); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 100%, 60%);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: hsl(0, 100%, 80%); 
 }

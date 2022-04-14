@@ -8,35 +8,30 @@ import NotFound from '@/views/NotFound.vue';
 
 const routes = [
     {
-        name: 'Home',
         path: '/',
         component: Home,
         meta: {
             title: 'Accueil - Catif'
         }
     }, {
-        name: 'Project',
         path: '/projects',
         component: Project,
         meta: {
             title: 'Projets - Catif'
         }
     }, {
-        name: 'Career',
         path: '/career',
         component: Career,
         meta: {
             title: 'Parcours - Catif'
         }
     }, {
-        name: 'Contact',
         path: '/contact',
         component: Contact,
         meta: {
             title: 'Contact - Catif'
         }
     }, {
-        name: 'NotFound',
         path: '/:pathMatch(.*)',
         component: NotFound,
         meta: {

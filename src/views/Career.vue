@@ -1,3 +1,5 @@
 <template>
-    <h1>Mon Parcours !</h1>
+    <div class="container">
+        <h1>Mon Parcours !</h1>
+    </div>
 </template>
