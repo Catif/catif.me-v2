@@ -9,3 +9,39 @@
         </div>
     </nav>
 </template>
+
+
+
+
+
+<style scoped>
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: var(--color-nav-background);
+}
+
+.nav-logo{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.nav-items{
+    display: flex;
+    gap: 45px;
+}
+
+.nav-item{
+    display: flex;
+    
+    align-items: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+</style>

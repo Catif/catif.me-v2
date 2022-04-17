@@ -3,18 +3,19 @@
 
 :root{
   /* Classical Variable */
-  --color-background: hsla(220, 100%, 10%, 1);
-  --color-text: hsl(220, 100%, 90%);
+  --color-background: hsla(0, 100%, 10%, 1);
+  --color-text: hsl(0, 100%, 97%);
+  --color-text-important: hsl(0, 100%, 79%);
   --size-text: 20px;
 
-  --color-link: hsl(220, 100%, 65%);
+  --color-link: hsl(0, 100%, 65%);
   --weight-link: 600;
 
   /* Navbar Variable */
-  --color-nav-background: hsla(220, 100%, 4%, 0.85);
+  --color-nav-background: hsla(0, 100%, 4%, 0.85);
 
   /* Navbar Container */
-  --color-container-background: hsla(220, 100%, 4%, 0.85);
+  --color-container-background: hsla(0, 100%, 4%, 0.85);
 
   /* ... Variable */
 }
@@ -30,7 +31,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  position: relative;
 }
 
 body {
@@ -70,57 +70,10 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================
-          Navbar
-======================== */
-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
-  
+ul{
   width: 100%;
-  height: 100px;
-
-  background-color: var(--color-nav-background);
+  font-size: var(--size-text);
 }
-
-.nav-logo{
-  font-size: 25px;
-  font-weight: 400;
-}
-
-.nav-items{
-  display: flex;
-  gap: 45px;
-}
-
-.nav-item{
-  display: flex;
-  
-  align-items: center;
-  font-size: 25px;
-  font-weight: 200;
-}
-
 
 
 
@@ -147,6 +100,7 @@ nav{
   flex-wrap: wrap;
 
   gap: 60px;
+  margin: 0px 10px;
 }
 
 .box{
@@ -243,6 +197,7 @@ nav{
 }
 
 .game-pong{
+  position: relative;
   width: 200px;
   height: 200px;
 
@@ -317,6 +272,9 @@ nav{
   text-align: center;
 }
 
+.font-important{
+  color: var(--color-text-important);
+}
 
 
 
@@ -335,13 +293,13 @@ nav{
 ======================== */
 @keyframes background {
   from {
-    backdrop-filter: blur(5px) contrast(140%) hue-rotate(205deg);
+    backdrop-filter: blur(5px) contrast(140%) hue-rotate(0deg);
   }
   50% {
-    backdrop-filter: blur(5px) contrast(140%) hue-rotate(240deg);
+    backdrop-filter: blur(5px) contrast(150%) hue-rotate(-10deg);
   }
   to {
-    backdrop-filter: blur(5px) contrast(140%) hue-rotate(205deg);
+    backdrop-filter: blur(5px) contrast(140%) hue-rotate(0deg);
   }
 }
 
@@ -361,6 +319,7 @@ nav{
 
 
 .hover-underline{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,19 +374,20 @@ nav{
 ::-webkit-scrollbar {
   position:absolute;
   width: 8px;
+  height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: hsl(220, 100%, 10%); 
+  background: hsl(0, 100%, 10%); 
 }
 ::-webkit-scrollbar-track:active {
-  background: hsl(220, 100%, 20%); 
+  background: hsl(0, 100%, 20%); 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: hsl(220, 100%, 60%);
+  background: hsl(0, 100%, 30%);
   border-radius: 1rem;
 }
 
