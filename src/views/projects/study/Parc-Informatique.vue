@@ -27,15 +27,17 @@
         </div>
         <Images :tab_Image="tab_Image" />
         <Technologies :tab_Techno="tab_Techno" />
+        <ProjectBtn :tab_Button="tab_Button" />
     </div>
 </template>
 
 <script>
-import Technologies from '@/components/Technologies.vue'
 import Images from '@/components/Images.vue'
+import Technologies from '@/components/Technologies.vue'
+import ProjectBtn from '@/components/ProjectBtn.vue'
 
 export default {
-    components: {Technologies, Images},
+    components: {Images, Technologies, ProjectBtn},
     data(){
         return {
             tab_Techno: {
@@ -54,6 +56,10 @@ export default {
                 2: "/study/Parc-Informatique",
                 3: "/stage/eZHost",
                 4: "/stage/eZHub",
+            },
+            tab_Button: {
+                "site"   : "https://google.com",
+                "github" : "https://github.com"
             }
         }
     }

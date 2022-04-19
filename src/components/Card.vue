@@ -23,6 +23,7 @@
 
 <style scoped>
 .card{
+    position: relative;
     width: 200px;
     height: 152px;
     border-radius: 20px;
@@ -52,7 +53,7 @@
     left: 0;
 
     border-radius: 20px;
-    background-color: hsla(0, 0%, 0%, .7);
+    background-color: hsla(210, 100%, 5%, 0.7);
 }
 
 .card:hover .card-name{

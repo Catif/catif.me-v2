@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <h1>Les projets auquel j'ai participé :</h1>
+            <h1>Mes projets :</h1>
         </div>
         <div class="list">
             <router-link v-for="project in projects" :key="project.team + '_' + project.url" class="box" :to="'/projects/' + project.team + '/' + project.url">
@@ -60,3 +60,65 @@ export default {
     }
 }
 </script>
+
+<style>
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 60px;
+    margin: 0px 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 476px;
+    height: 300px;
+
+    background-color: var(--color-container-background);
+    border-radius: 20px;
+
+    transition: transform .2s ease;
+    border: 1px solid  var(--color-text-important);
+}
+
+.box:hover{
+    z-index: 1000;
+    transform: scale(1.1);
+}
+
+.box .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 60px;
+    width: 100%;
+
+    font-size: 15px;
+    /* border-bottom: 1px solid  var(--color-text-important); */
+}
+
+.box .title div:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    
+    color: var(--color-text-important);
+}
+
+.box img{
+    width: 100%;
+    height: calc(100% - 60px);
+
+    border-radius: 0 0 20px 20px;
+    object-fit: cover;
+}
+
+</style>

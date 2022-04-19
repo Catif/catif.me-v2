@@ -1,11 +1,11 @@
 <template>
     <div class="container">
-        <h1 class="title">Bienvenue sur mon <u>Portfolio</u> !</h1>
+        <h1 class="title">Bienvenue sur mon <span class="font-important">Portfolio</span> !</h1>
         <div class="content">
             <div class="raw">
                 <p class="column text-justify">
-                    Je me présente, <b>Bradley BARBIER</b>.<br>
-                    J'adore développer, d'où mon cursus d'apprentissage. <router-link to="/career" class="link">(Voir Parcours)</router-link><br>
+                    Je me présente, <span class="font-important">Bradley BARBIER</span>.<br>
+                    J'adore développer, d'où mon cursus d'apprentissage. <router-link to="/career" class="link"><br>(Voir Parcours <fa :icon="['fas', 'arrow-right']"/>)</router-link><br>
                     J'aimerai me spécialiser dans le développement Back End, car j'aime travailler sur la logique d'un algorithme, mais aussi accessoirement car je suis très nul en design.
                 </p>
                 <div class="column game-pong">
@@ -41,3 +41,84 @@ export default {
     }
 }
 </script>
+
+<style>
+
+.game-pong{
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid var(--color-text);
+    border-radius: 4px;
+
+    background-color: hsla(0, 0%, 0%, .3);
+}
+
+.game-pong .player{
+    position: absolute;
+    width: 5px;
+    height: 40px;
+
+    top: 5px;
+    left: 2px; 
+
+    background-color: var(--color-text-important);
+    border-radius: 10px;
+
+    animation-name: player;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+.game-pong .ball{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--color-text-important);
+    border-radius: 100%;
+
+    top: 30px;
+    left: 7px;
+
+    animation-name: ball;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.game-pong .wall{
+    position: absolute;
+    width: 10px;
+    height: 190px;
+
+    background-color: var(--color-text-important);
+    border-radius: 10px;
+
+    bottom: 5px;
+    right: 5px;
+}
+
+.game-pong .score{
+    position: absolute;
+
+    color: var(--color-text-important);
+    top: 0px;
+    left: 90px;
+}
+
+@keyframes player {
+    from {top: 2px}
+    50% {top: 150px}
+    to {top: 2px}
+}
+
+@keyframes ball {
+    0% {left: 7px; top: 30px}
+    25% {left: 175px; top: 90px}
+    50% {left: 7px; top: 150px}
+    75% {left: 175px; top: 90px}
+    100% {left: 7px; top: 30px}
+}
+</style>

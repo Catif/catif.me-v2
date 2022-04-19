@@ -10,11 +10,16 @@
             <img src="/src/assets/img/technologies/aucune.webp">
         </div>
 
-        <div v-if="tab_Image.default != 'Aucune'">
-            <div @click="closeModal" id="modal">
-                <div class="modal-content">
-                    <img v-show='id == imageModal' @click="openModals(id)" v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
+        <div v-if="tab_Image.default != 'Aucune'" @click="closeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-btn left" v-show="imageModal > 1" @click="imageModal--">
+                    <fa :icon="['fas', 'arrow-left']" />
                 </div>
+                <img v-show='id == imageModal' v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
+                <div class="modal-btn right" v-show="imageModal < Object.keys(tab_Image).length" @click="imageModal++">
+                    <fa :icon="['fas', 'arrow-right']" />
+                </div>
+                <div class="modal-count">{{ imageModal }}/{{ Object.keys(tab_Image).length }}</div>
             </div>
         </div>
     </div>
@@ -38,16 +43,16 @@ export default {
     methods: {
         openModal(id){
             this.imageModal = id
-            document.body.style.overflow= "hidden";
-            this.$el.querySelector('#modal').style.display= "block";
+            document.body.style.overflowY= "hidden";
+            this.$el.querySelector('.modal').classList.add('active')
         },
 
         closeModal(event){
-            var modal = this.$el.querySelector('#modal');
+            var modal = this.$el.querySelector('.modal');
             if(event.target == modal){
                 this.imageModal = 1
-                modal.style.display= "none";
-                document.body.style.overflow= "scroll";
+                document.body.style.overflowY= "scroll";
+                modal.classList.remove('active')
             }
         }
     }
@@ -56,55 +61,145 @@ export default {
 
 <style>
 .preview {
-    background-color: hsla(0, 100%, 4%, 0.85);
+    background-color: var(--color-container-background);
     overflow-x: auto;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     
-    width: 1100px;
+    width: 1000px;
     
+    border: 1px solid  var(--color-text-important);
     border-radius: 10px;
 
     margin: auto;
     padding: 10px 10px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+.preview::-webkit-scrollbar {
+    margin: 0px 10px;
+}
+.preview::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.preview::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+}
+
 
 .preview img{
     width: 476px;
     height: 240px;
+    
+    border-radius: 8px;
+
+    transition: .2s;
+    border: 1px solid  var(--color-text-important);
 }
 
 .preview img:hover{
     cursor: pointer;
+    transform: scale(1.025);
 }
 
 
+.test{
+    position: relative;
+}
 
-#modal{
+.modal{
     display: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal.active{
     position: fixed;
+
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
 
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    width: 100%;
-    height: 100%;
-
-    padding-top: 50px;
-
-    background-color: hsla(0, 100%, 4%, 0.8);
+    z-index: 999;
+    background-color: hsla(216, 28%, 7%, .5);
 }
 
 .modal-content{
-    margin: auto;
-    padding: 20px;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80%;
+    width: auto;
+}
+
+.modal-count{
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-container-background);
+    border: 1px solid  var(--color-text-important);
+    border-radius: 20px;
+
+    top: 55px;
+
+    font-size: 25px;
+
+    width: 70px;
+    height: 55px;
+
+    color: var(--color-text-important);
 
 }
 
-#modal img{
+.modal-btn{
+    position: fixed;
 
-    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    margin: 0px 40px;
+
+    background-color: var(--color-container-background);
+    border: 1px solid  var(--color-text-important);
+    border-radius: 100%;
+
+    font-size: 3.5em;
+    color: var(--color-text-important);
+
+    cursor: pointer;
+}
+
+.modal-btn.left{
+    left: 0
+}
+
+
+.modal-btn.right{
+    right: 0
+}
+
+.modal img{
+    height: 100%;
+    max-width: 1500px;
+    border-radius: 20px;
+    border: 1px solid  var(--color-text-important);
 }
 </style>

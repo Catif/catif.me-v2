@@ -52,5 +52,11 @@ import Card from '@/components/Card.vue'
     
     gap: 40px;
     margin: 0px 10px;
+
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 </style>
