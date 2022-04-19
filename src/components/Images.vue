@@ -51,7 +51,7 @@ export default {
             var modal = this.$el.querySelector('.modal');
             if(event.target == modal){
                 this.imageModal = 1
-                document.body.style.overflowY= "scroll";
+                document.body.style.overflowY= "auto";
                 modal.classList.remove('active')
             }
         }
@@ -132,7 +132,7 @@ export default {
     align-items: center;
 
     z-index: 999;
-    background-color: hsla(216, 28%, 7%, .5);
+    background-color: hsla(216, 28%, 7%, .7);
 }
 
 .modal-content{

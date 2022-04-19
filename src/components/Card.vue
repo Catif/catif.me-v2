@@ -1,8 +1,9 @@
 <template>
-    <div v-if="name != 'none'" class="card">
-        <img :src="'/src/assets/img/technologies/' + name + '.webp'">
-        <div class="card-name">{{name}}</div>
+    <div v-if="techno.none != 'none'" class="card">
+        <img :src="'/src/assets/img/technologies/' + techno.file + '.webp'">
+        <div class="card-name">{{ techno.name }}</div>
     </div>
+    
 </template>
 
 
@@ -11,8 +12,11 @@
 <script>
     export default {
         props: {
-            name: {
-                default: "none"
+            techno: {
+                type: Object,
+                default: {
+                    "none" : "none"
+                }
             }
         }
     }
@@ -46,6 +50,7 @@
     width: 200px;
     height: 152px;
 
+    color: #fff;
     font-size: 25px;
     text-align: center;
 

@@ -6,23 +6,23 @@
         </div>
         <div class="container">
             <p>
-                Ce projet à été créer durant mon <span class="font-important">cursus d'étude en BTS SIO</span>.<br>
-                <span class="font-important">Nous avions une semaine pour développer un site web en binôme</span> mettant en oeuvre nos compétences en <span class="font-important">requête SQL et de création de base de donnée MySQL</span>.<br>
+                Ce projet a été créé durant mon <span class="font-important">cursus d'étude en BTS SIO</span>.<br>
+                <span class="font-important">Nous avions une semaine pour développer un site web en binôme</span> mettant en œuvre nos compétences en <span class="font-important">requête SQL et de création de base de données MySQL</span>.<br>
                 <br>
-                <span class="font-important">L'objectif de ce projet était de créer un parc informatique</span>, un endroit où les étudiants pouvaient informer le lycée des différents appareils informatique qu'ils possédaient.<br>
-                Les professeurs auraient eu accées à différentes informations/statistiques sur leurs classes.<br>
+                <span class="font-important">L'objectif de ce projet est de créer un parc informatique</span>, un endroit où les étudiants peuvent informer le lycée des différents appareils informatique qu'ils possèdent.<br>
+                Les professeurs ont accès à différentes informations/statistiques sur leurs classes.<br>
                 <br>
                 Par exemple : <br> 
-                Un professeur pouvait regarder :
+                un professeur peut savoir :
             </p>
             <ul>
-                <li>le nombre d'étudiants ayant une connexion internet à la maison;</li>
-                <li>le nombre d'étudiants possédant un ordinateur portable;</li>
-                <li>et d'autres informations...</li>
-            </ul>
+                <li>le nombre d'étudiants ayant une connexion internet à la maison ;</li>
+                <li>le nombre d'étudiants possédant un ordinateur portable ;</li>
+                <li>et d'autres informations…</li>
+            </ul><br>
             <p>
-                <br>
-                Nous avons donc dû gérer les roles des utilisateurs <span class="font-important">(étudiant, professeur, administrateur...)</span>, créer différentes interfaces pour chaque type d'utilisateur. <br>
+                
+                Nous avons géré les droits des utilisateurs <span class="font-important">(étudiant, professeur, administrateur...)</span>, créer différentes interfaces pour chaque type d'utilisateur. <br>
             </p>
         </div>
         <Images :tab_Image="tab_Image" />
@@ -42,24 +42,26 @@ export default {
         return {
             tab_Techno: {
                 "Techno": {
-                    1: "MySQL",
-                    2: "Bootstrap",
-                    3: "PHP"
+                    1: { "name": "MySQL", "file": "mysql" },
+                    2: { "name": "Bootstrap", "file": "bootstrap" },
+                    3: { "name": "PHP", "file": "php" }
                 },
                 "Software": {
-                    1: "Figma",
-                    2: "WinDesign"
+                    1: { "name": "Visual Studio Code", "file": "visual-code" },
+                    2: { "name": "Figma", "file": "figma" },
+                    3: { "name": "WinDesign", "file": "windesign" }
                 }
             },
             tab_Image: {
-                1: "/study/Formulaire-De-Competence",
-                2: "/study/Parc-Informatique",
-                3: "/stage/eZHost",
-                4: "/stage/eZHub",
+                1: "/study/Parc-Informatique/1",
+                2: "/study/Parc-Informatique/2",
+                3: "/study/Parc-Informatique/3",
+                4: "/study/Parc-Informatique/4",
+                5: "/study/Parc-Informatique/5",
             },
             tab_Button: {
-                "site"   : "https://google.com",
-                "github" : "https://github.com"
+                "site"   : "https://projets.catif.me/etud_Parc-Informatique/",
+                "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
             }
         }
     }

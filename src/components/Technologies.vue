@@ -4,7 +4,7 @@
             <h1>Technologies :</h1>
         </div>
         <div class="list-card">
-            <Card v-for="(techno, id) in tab_Techno.Techno" :key="id" :name="techno" />
+            <Card v-for="(techno, id) in tab_Techno.Techno" :key="id" :techno="techno" />
         </div>
 
 
@@ -12,7 +12,7 @@
             <h1>Logiciels :</h1>
         </div>
         <div class="list-card">
-            <Card v-for="(soft, id) in tab_Techno.Software" :key="id" :name="soft"/>
+            <Card v-for="(soft, id) in tab_Techno.Software" :key="id" :techno="soft"/>
         </div>
     </div>
 </template>
