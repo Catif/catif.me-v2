@@ -6,7 +6,7 @@
         </div>
         <div class="container">
             <p>
-                Ce projet a été créé durant mon <span class="font-important">cursus d'étude en BTS SIO</span>.<br>
+                Ce projet a été créé durant ma<span class="font-important"> seconde année de BTS SIO</span>.<br>
                 <span class="font-important">Nous avions une semaine pour développer un site web en binôme</span> mettant en œuvre nos compétences en <span class="font-important">requête SQL et de création de base de données MySQL</span>.<br>
                 <br>
                 <span class="font-important">L'objectif de ce projet est de créer un parc informatique</span>, un endroit où les étudiants peuvent informer le lycée des différents appareils informatique qu'ils possèdent.<br>
