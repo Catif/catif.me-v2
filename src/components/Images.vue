@@ -7,7 +7,7 @@
             <img @click="openModal(id)" v-for="(image, id) in tab_Image" :key="id" :src="'/img/projects' + image + '.png'">
         </div>
         <div v-else class="preview">
-            <img src="/src/assets/img/technologies/aucune.webp">
+            <img src="/img/technologies/aucune.webp">
         </div>
 
         <div v-if="tab_Image.default != 'Aucune'" @click="closeModal" class="modal">
@@ -97,6 +97,7 @@ export default {
 
     transition: .2s;
     border: 1px solid  var(--color-text-important);
+    object-fit: cover;
 }
 
 .preview img:hover{
@@ -202,6 +203,7 @@ export default {
 }
 
 .modal-image{
+    background-color: hsl(210, 100%, 10%);
     height: 100%;
     max-width: 1500px;
     
@@ -209,6 +211,7 @@ export default {
     border: 1px solid  var(--color-text-important);
 
     opacity: 1;
-    transition: all .1s ease
+    object-fit: contain;
+    transition: all .1s ease;
 }
 </style>

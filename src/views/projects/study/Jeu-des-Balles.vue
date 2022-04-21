@@ -10,7 +10,7 @@
                 <span class="font-important">Nous avions une semaine pour développer un site web en binôme</span> mettant en œuvre nos compétences en <span class="font-important">JavaScript et HTML5</span>.<br>
                 <br>
                 <span class="font-important">L'objectif de ce projet est de créer un jeu de balle</span>, un jeu qui teste notre agilité à la souris en cliquant sur des balles.<br>
-                Le jeu nous teste sur <span class="font-important">différentes difficultés</span> de 1 à 5, 5 étant la plus dur avec des balles très petites et une vitesse élevé.<br>
+                Le jeu nous teste sur <span class="font-important">différentes difficultés de 1 à 5</span>, 5 étant la plus dure avec des balles très petites et une vitesse élevée.<br>
             </p>
         </div>
         <Images :tab_Image="tab_Image" />
@@ -35,14 +35,12 @@ export default {
             },
             tab_Techno: {
                 "Techno": {
-                    1: { "name": "MySQL", "file": "mysql" },
-                    2: { "name": "Bootstrap", "file": "bootstrap" },
-                    3: { "name": "PHP", "file": "php" }
+                    1: { "name": "HTML Vanilla", "file": "html" },
+                    2: { "name": "CSS Vanilla", "file": "css" },
+                    3: { "name": "Jquery", "file": "jquery" },
                 },
                 "Software": {
-                    1: { "name": "Visual Studio Code", "file": "visual-code" },
-                    2: { "name": "Figma", "file": "figma" },
-                    3: { "name": "WinDesign", "file": "windesign" }
+                    1: { "name": "Visual Studio Code", "file": "visual-code" }
                 }
             },
             tab_Button: {

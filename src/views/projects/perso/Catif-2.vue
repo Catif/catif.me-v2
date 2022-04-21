@@ -42,8 +42,8 @@ export default {
                 3: "/perso/Catif-2/3",
                 4: "/perso/Catif-2/4",
                 5: "/perso/Catif-2/5",
-                6: "/perso/Catif-2/6",
-                7: "/perso/Catif-2/7",
+                // 6: "/perso/Catif-2/6",
+                // 7: "/perso/Catif-2/7",
 
             },
             tab_Button: {
