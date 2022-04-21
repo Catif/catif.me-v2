@@ -8,8 +8,8 @@
             <p>
                 Ce projet est la <span class="font-important">première version de mon site portfolio</span>. <router-link class="link" to="/projects/stage/eZHost">Seconde version ici</router-link><br>
                 <br>
-                <span class="font-important">L'objectif de ce projet est de créer un portfolio personnel</span>, un endroit où se trouve tous les projets auquels j'ai participé.<br>
-                Il me permet aussi de présenter aux entreprises ce que j'ai fait par le passé et <span class="font-important">montrer mes compétences par des actions</span>.
+                <span class="font-important">L'objectif de ce projet est de créer un portfolio personnel</span>, un site, où se trouvent <span class="font-important">tous les projets auxquels j'ai participé</span>, ainsi que mes <span class="font-important">informations personnelles pour me contacter ou me connaître</span>.<br>
+                Il me permet aussi de présenter aux entreprises ce que j'ai fait par le passé et <span class="font-important">montré mes compétences par des actions</span>.
 
             </p>
         </div>
@@ -46,8 +46,8 @@ export default {
                 5: "/perso/Catif-1/5",
             },
             tab_Button: {
-                "site"   : "https://hub.ezcorp.io",
-                "github" : "https://github.com"
+                "site"   : "https://v1.catif.me",
+                "github" : "none" // https://github.com/Catif/catif.me-v1
             }
         }
     }

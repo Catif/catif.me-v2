@@ -9,8 +9,8 @@
                 Ce projet a été créé durant mon <span class="font-important">stage d'étude en première année de BTS SIO</span>.<br>
                 C'était la seconde mission du stage, la première étant <router-link class="link" to="/projects/stage/eZHost">eZHost</router-link>.<br>
                 <br>
-                <span class="font-important">L'objectif de ce projet est de créer un hub</span>, un endroit où se trouve tous les liens utiles de l'entreprise, utilisé par les clients ou les développeur.<br>
-                <span class="font-important">Les liens et les images sont stockés dans une API</span> qui est à disposition des administrateurs du domaine.<br>
+                <span class="font-important">L'objectif de ce projet est de créer un hub</span>, un endroit, où se trouvent tous les liens utiles de l'entreprise, utilisé par les clients ou les développeurs.<br>
+                <span class="font-important">Les liens et les images sont stockés dans une API</span> à disposition des administrateurs du domaine.<br>
 
             </p>
         </div>

@@ -9,7 +9,7 @@
   --size-text: 20px;
 
   --color-link: hsl(210, 100%, 50%);
-  --weight-link: 600;
+  --weight-link: 500;
 
   /* Navbar Variable */
   --color-nav-text: hsl(210, 30%, 82%);
@@ -72,6 +72,10 @@ ul{
   font-size: var(--size-text);
 }
 
+li::marker{
+  color: var(--color-text-important);
+}
+
 
 
 /* ========================
@@ -111,6 +115,7 @@ ul{
 .link{
   color: var(--color-link);
   font-weight: var(--weight-link);
+  text-decoration: underline;
 }
 
 .text-justify{
@@ -124,6 +129,12 @@ ul{
 .font-important{
   color: var(--color-text-important);
 }
+
+.flex{display: flex}
+.justify-center{justify-content: center}
+.align-center{align-items: center}
+.flex-column{flex-direction: column;}
+
 
 
 

@@ -3,10 +3,13 @@
         <h1 class="title">Bienvenue sur mon <span class="font-important">Portfolio</span> !</h1>
         <div class="content">
             <div class="raw">
-                <p class="column text-justify">
-                    Je me présente, <span class="font-important">Bradley BARBIER</span>.<br>
-                    J'adore développer, d'où mon cursus d'apprentissage. <router-link to="/career" class="link"><br>(Voir Parcours <fa :icon="['fas', 'arrow-right']"/>)</router-link><br>
-                    J'aimerai me spécialiser dans le développement Back End, car j'aime travailler sur la logique d'un algorithme, mais aussi accessoirement car je suis très nul en design.
+                <p class="column text-justify flex justify-center flex-column">
+                    Sur ce site, vous trouverez :
+                    <ul>
+                        <li><router-link to="/projects" class="link">mes divers projets</router-link> ;</li>
+                        <li><router-link to="/career" class="link">mon parcours professionel</router-link> ;</li>
+                        <li><router-link to="/contact" class="link">une partie contact avec mes réseaux sociaux</router-link>.</li>
+                    </ul>
                 </p>
                 <div class="column game-pong">
                     <div class="player"></div>

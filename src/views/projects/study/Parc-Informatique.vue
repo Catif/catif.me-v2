@@ -61,7 +61,7 @@ export default {
             },
             tab_Button: {
                 "site"   : "https://projets.catif.me/etud_Parc-Informatique/",
-                "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
+                "github" : "https://github.com/Catif/Challenge_SIO2"
             }
         }
     }

@@ -15,11 +15,11 @@
                 <div class="modal-btn left" v-show="imageModal > 1" @click="imageModal--">
                     <fa :icon="['fas', 'arrow-left']" />
                 </div>
-                <img v-show='id == imageModal' v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
+                <div class="modal-count">{{ imageModal }}/{{ Object.keys(tab_Image).length }}</div>
+                <img :id="'image-' + id" class="modal-image" v-show='id == imageModal' v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
                 <div class="modal-btn right" v-show="imageModal < Object.keys(tab_Image).length" @click="imageModal++">
                     <fa :icon="['fas', 'arrow-right']" />
                 </div>
-                <div class="modal-count">{{ imageModal }}/{{ Object.keys(tab_Image).length }}</div>
             </div>
         </div>
     </div>
@@ -46,7 +46,6 @@ export default {
             document.body.style.overflowY= "hidden";
             this.$el.querySelector('.modal').classList.add('active')
         },
-
         closeModal(event){
             var modal = this.$el.querySelector('.modal');
             if(event.target == modal){
@@ -105,18 +104,17 @@ export default {
     transform: scale(1.025);
 }
 
-
-.test{
-    position: relative;
-}
-
 .modal{
-    display: none;
+    position: relative;
+
+    height: 0;
+
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 .modal.active{
@@ -124,6 +122,7 @@ export default {
 
     width: 100vw;
     height: 100vh;
+
     top: 0;
     left: 0;
 
@@ -135,6 +134,11 @@ export default {
     background-color: hsla(216, 28%, 7%, .7);
 }
 
+.modal.active .modal-content{
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
 .modal-content{
     display: flex;
     justify-content: center;
@@ -142,6 +146,7 @@ export default {
 
     height: 80%;
     width: auto;
+    transform: scale(0);
 }
 
 .modal-count{
@@ -155,7 +160,7 @@ export default {
     border: 1px solid  var(--color-text-important);
     border-radius: 20px;
 
-    top: 55px;
+    top: -39px;
 
     font-size: 25px;
 
@@ -175,7 +180,7 @@ export default {
 
     width: 100px;
     height: 100px;
-    margin: 0px 40px;
+    margin: 0 -150px;
 
     background-color: var(--color-container-background);
     border: 1px solid  var(--color-text-important);
@@ -196,10 +201,14 @@ export default {
     right: 0
 }
 
-.modal img{
+.modal-image{
     height: 100%;
     max-width: 1500px;
+    
     border-radius: 20px;
     border: 1px solid  var(--color-text-important);
+
+    opacity: 1;
+    transition: all .1s ease
 }
 </style>

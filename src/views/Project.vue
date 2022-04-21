@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <h1>Mes projets :</h1>
+            <h1>Mes <span class="font-important">Projets</span> :</h1>
         </div>
         <div class="list">
             <router-link v-for="project in projects" :key="project.team + '_' + project.url" class="box" :to="'/projects/' + project.team + '/' + project.url">
@@ -9,7 +9,7 @@
                     <div>{{ project.title_primary }}</div>
                     <div v-if="project.title_secondary != ''">{{ project.title_secondary }}</div>
                 </div>
-                <img :src="'/src/assets/img/projects/' + project.team + '/' + project.url + '.png'">
+                <img :src="'/src/assets/img/projects/' + project.team + '/' + project.url + '-main.png'">
             </router-link>
         </div>
     </div>
