@@ -1,6 +1,6 @@
 <template>
     <div v-if="techno.none != 'none'" class="card">
-        <img :src="'/src/assets/img/technologies/' + techno.file + '.webp'">
+        <img :src="'/img/technologies/' + techno.file + '.webp'">
         <div class="card-name">{{ techno.name }}</div>
     </div>
     

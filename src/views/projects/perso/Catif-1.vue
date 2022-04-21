@@ -6,11 +6,10 @@
         </div>
         <div class="container">
             <p>
-                Ce projet est la <span class="font-important">première version de mon site portfolio</span>. <router-link class="link" to="/projects/stage/eZHost">Seconde version ici</router-link><br>
+                Ce projet est la <span class="font-important">première version de mon site portfolio</span>. <router-link class="link" to="/projects/perso/Catif-2">Seconde version ici</router-link><br>
                 <br>
                 <span class="font-important">L'objectif de ce projet est de créer un portfolio personnel</span>, un site, où se trouvent <span class="font-important">tous les projets auxquels j'ai participé</span>, ainsi que mes <span class="font-important">informations personnelles pour me contacter ou me connaître</span>.<br>
-                Il me permet aussi de présenter aux entreprises ce que j'ai fait par le passé et <span class="font-important">montré mes compétences par des actions</span>.
-
+                Il me permet de présenter aux entreprises ce que j'ai fait par le passé et <span class="font-important">montré mes compétences par des actions</span>.
             </p>
         </div>
         <Images :tab_Image="tab_Image" />

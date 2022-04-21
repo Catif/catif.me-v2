@@ -4,7 +4,7 @@
             <h1>Images du projet :</h1>
         </div>
         <div v-if="tab_Image.default != 'Aucune'" class="preview">
-            <img @click="openModal(id)" v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
+            <img @click="openModal(id)" v-for="(image, id) in tab_Image" :key="id" :src="'/img/projects' + image + '.png'">
         </div>
         <div v-else class="preview">
             <img src="/src/assets/img/technologies/aucune.webp">
@@ -16,7 +16,7 @@
                     <fa :icon="['fas', 'arrow-left']" />
                 </div>
                 <div class="modal-count">{{ imageModal }}/{{ Object.keys(tab_Image).length }}</div>
-                <img :id="'image-' + id" class="modal-image" v-show='id == imageModal' v-for="(image, id) in tab_Image" :key="id" :src="'/src/assets/img/projects' + image + '.png'">
+                <img :id="'image-' + id" class="modal-image" v-show='id == imageModal' v-for="(image, id) in tab_Image" :key="id" :src="'/img/projects' + image + '.png'">
                 <div class="modal-btn right" v-show="imageModal < Object.keys(tab_Image).length" @click="imageModal++">
                     <fa :icon="['fas', 'arrow-right']" />
                 </div>

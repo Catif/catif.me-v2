@@ -9,7 +9,7 @@
                     <div>{{ project.title_primary }}</div>
                     <div v-if="project.title_secondary != ''">{{ project.title_secondary }}</div>
                 </div>
-                <img :src="'/src/assets/img/projects/' + project.team + '/' + project.url + '-main.png'">
+                <img :src="'/img/projects/' + project.team + '/' + project.url + '-main.png'">
             </router-link>
         </div>
     </div>
@@ -39,6 +39,11 @@ export default {
                     'title_secondary' : 'Challenge SIO2 - 2021',
                     'url'  : 'Parc-Informatique',
                     'team' : 'study'
+                }, { 
+                    'title_primary' : 'Catif.me',
+                    'title_secondary' : 'Version 1 - 2021',
+                    'url'  : 'Catif-1',
+                    'team' : 'perso'
                 }, {
                     'title_primary' : 'eZHost',
                     'title_secondary' : 'Stage SIO1 - 2021',
@@ -50,10 +55,10 @@ export default {
                     'url'  : 'eZHub',
                     'team' : 'stage'
                 }, { 
-                    'title_primary' : 'Catif.me',
-                    'title_secondary' : 'Version 1 - 2021',
-                    'url'  : 'Catif-1',
-                    'team' : 'perso'
+                    'title_primary' : 'Jeu des balles',
+                    'title_secondary' : 'Challenge SIO1 - 2021',
+                    'url'  : 'Jeu-des-Balles',
+                    'team' : 'study'
                 }
             ]
         }
@@ -69,7 +74,7 @@ export default {
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 60px;
+    gap: 50px;
     margin: 0px 10px;
 }
 

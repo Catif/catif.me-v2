@@ -8,6 +8,7 @@ import Project from '@/views/Project.vue';
 
 
         // Etude
+        import Study_Jeu_des_Balles from '@/views/projects/study/Jeu-des-Balles.vue';
         import Study_Parc_Informatique from '@/views/projects/study/Parc-Informatique.vue';
         import Study_Formulaire_De_Competence from '@/views/projects/study/Formulaire-De-Competence.vue';
 
@@ -39,6 +40,7 @@ const routes = [
         { path: '/projects/perso/Catif-2', component: Perso_Catif_2, meta: {title: 'Projets - Catif'}}, 
 
         // Study
+        { path: '/projects/study/Jeu-des-Balles', component: Study_Jeu_des_Balles, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Parc-Informatique', component: Study_Parc_Informatique, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Formulaire-De-Competence', component: Study_Formulaire_De_Competence, meta: {title: 'Projets - Catif'}}, 
         
