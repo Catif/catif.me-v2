@@ -72,6 +72,7 @@ export default {
 
     margin: auto;
     padding: 10px 10px;
+    
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -moz-user-select: none;

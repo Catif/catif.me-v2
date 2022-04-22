@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory} from 'vue-router';
+
+
 import Home from '@/views/Home.vue';
 import Project from '@/views/Project.vue';
     // Projects
         // Perso
         import Perso_Catif_1 from '@/views/projects/perso/Catif-1.vue';
         import Perso_Catif_2 from '@/views/projects/perso/Catif-2.vue';
-
 
         // Etude
         import Study_Jeu_des_Balles from '@/views/projects/study/Jeu-des-Balles.vue';
