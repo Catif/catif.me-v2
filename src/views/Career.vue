@@ -48,7 +48,7 @@
                     <span class="date font-important">{{ element.date_start }} - {{ element.date_end }}</span><br>
                     
                     <div class="item-content" >
-                        <span class="utilities"><a class="link" href="element.school_url">{{ element.school_name }}</a> - {{ element.location }}</span><br>
+                        <span class="utilities"><a class="link" :href="element.school_url" target="_blank">{{ element.school_name }}</a> - {{ element.location }}</span><br>
                         <span class="role">{{ element.type }}</span><template v-if="element.mention != ''"> - {{ element.mention }}</template><br>
 
                         <span v-if="element.desc != ''" class="description">
