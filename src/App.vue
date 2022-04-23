@@ -2,7 +2,7 @@
     <Navbar/>
     
     <router-view v-slot="{ Component }">
-        <transition name="router" mode="out-in">
+        <transition name="fade" mode="out-in">
                 <component :is="Component"></component>
         </transition>
     </router-view>
@@ -27,22 +27,22 @@ export default {
 <style>
 @import './assets/base.css';
 
-/* route transitions */
-.router-enter-from,
-.router-leave-to{
+/* fade transitions */
+.fade-enter-from,
+.fade-leave-to{
     opacity: 0;
 }
 
-.router-enter-active,
-.router-leave-active {
+.fade-enter-active,
+.fade-leave-active {
     transition: all .2s ease-out;
 }
 
-.router-enter-from{
+.fade-enter-from{
     transform: translateY(-50px);
 }
 
-.router-leave-to{
+.fade-leave-to{
     transform: translateY(50px);
 }
 </style>
