@@ -9,7 +9,7 @@
                     <div>{{ project.title_primary }}</div>
                     <div v-if="project.title_secondary != ''">{{ project.title_secondary }}</div>
                 </div>
-                <img :src="'/img/projects/' + project.team + '/' + project.url + '-main.png'">
+                <img :src="'/img/projects/' + project.team + '/' + project.url + '-main.webp'">
             </router-link>
         </div>
     </div>
