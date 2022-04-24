@@ -40,7 +40,7 @@ export default {
                     1: { "name": "VueJS", "file": "vuejs" },
                     2: { "name": "Bootstrap", "file": "bootstrap" },
                     3: { "name": "Sass", "file": "sass" },
-                    4: { "name": "MockAPI", "file": "mockapi" }
+                    4: { "name": "Strapi", "file": "strapi" }
                 },
                 "Software": {
                     1: { "name": "Visual Studio Code", "file": "visual-code" },

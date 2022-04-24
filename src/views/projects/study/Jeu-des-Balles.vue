@@ -44,8 +44,8 @@ export default {
                 }
             },
             tab_Button: {
-                "site"   : "https://projets.catif.me/etud_Parc-Informatique/",
-                "github" : "https://github.com/Catif/BTS-SIO2_Parc-Informatique"
+                "site"   : "https://asci6.sms-formation.fr/Jeu_des_Balles/",
+                "github" : "https://github.com/Catif/BTS-SIO1_Jeu-des-Balles"
             },
         }
     }
