@@ -1,5 +1,5 @@
 <template>
-    <div class="btn">
+    <div class="btn" v-if="tab_Button.site != 'none'">
         <a class="btn-project" :class="(tab_Button.github == 'none') ? 'alone' : ''" :href="tab_Button.site" target="_blank">Voir le site du projet</a>
         <a v-if="tab_Button.github != 'none'" class="btn-github" :href="tab_Button.github" target="_blank"><fa :icon="['fab', 'github']" /></a>
     </div>

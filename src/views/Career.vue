@@ -221,7 +221,7 @@ export default {
     justify-content: space-between;
     gap: 20px;
     width: 1000px;
-    margin: 30px auto;
+    margin: 30px auto 0px auto;
 }
 
 .list-btn{

@@ -7,8 +7,7 @@
                     Sur ce site, vous trouverez :
                     <ul>
                         <li><router-link to="/projects" class="link">mes divers projets</router-link> ;</li>
-                        <li><router-link to="/career" class="link">mon parcours professionel</router-link> ;</li>
-                        <li><router-link to="/contact" class="link">une partie contact avec mes réseaux sociaux</router-link>.</li>
+                        <li><router-link to="/career" class="link">mon parcours professionel</router-link>.</li>
                     </ul>
                 </p>
                 <div class="column game-pong">

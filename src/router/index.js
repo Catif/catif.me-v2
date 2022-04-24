@@ -19,7 +19,6 @@ import Project from '@/views/Project.vue';
 
 
 import Career from '@/views/Career.vue';
-import Contact from '@/views/Contact.vue';
 
 import NotFound from '@/views/NotFound.vue';
 
@@ -53,11 +52,6 @@ const routes = [
         path: '/career', component: Career,
         meta: {
             title: 'Parcours - Catif'
-        }
-    }, {
-        path: '/contact', component: Contact,
-        meta: {
-            title: 'Contact - Catif'
         }
 
 

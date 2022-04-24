@@ -48,7 +48,7 @@ export default {
             },
             
             tab_Button: {
-                "site"   : "https://hub.ezcorp.io",
+                "site"   : "none",
                 "github" : "none"
             }
         }
