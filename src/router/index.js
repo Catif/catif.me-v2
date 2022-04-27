@@ -11,7 +11,9 @@ import Project from '@/views/Project.vue';
         // Etude
         import Study_Jeu_des_Balles from '@/views/projects/study/Jeu-des-Balles.vue';
         import Study_Parc_Informatique from '@/views/projects/study/Parc-Informatique.vue';
-        import Study_Formulaire_De_Competence from '@/views/projects/study/Formulaire-De-Competence.vue';
+        import Study_Formulaire_De_Competence_PHP from '@/views/projects/study/Formulaire-De-Competence_PHP.vue';
+        import Study_Formulaire_De_Competence_CS from '@/views/projects/study/Formulaire-De-Competence_CS.vue';
+        import Banqueroute from '@/views/projects/study/Formulaire-De-Competence_CS.vue';
 
         // Stage
         import Stage_eZHost from '@/views/projects/stage/eZHost.vue';
@@ -42,7 +44,9 @@ const routes = [
         // Study
         { path: '/projects/study/Jeu-des-Balles', component: Study_Jeu_des_Balles, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Parc-Informatique', component: Study_Parc_Informatique, meta: {title: 'Projets - Catif'}}, 
-        { path: '/projects/study/Formulaire-De-Competence', component: Study_Formulaire_De_Competence, meta: {title: 'Projets - Catif'}}, 
+        { path: '/projects/study/Formulaire-De-Competence_PHP', component: Study_Formulaire_De_Competence_PHP, meta: {title: 'Projets - Catif'}}, 
+        { path: '/projects/study/Formulaire-De-Competence_CS', component: Study_Formulaire_De_Competence_CS, meta: {title: 'Projets - Catif'}}, 
+        { path: '/projects/study/Banqueroute', component: Banqueroute, meta: {title: 'Projets - Catif'}}, 
         
         // Stage
         { path: '/projects/stage/eZHost', component: Stage_eZHost, meta: {title: 'Projets - Catif'}}, 

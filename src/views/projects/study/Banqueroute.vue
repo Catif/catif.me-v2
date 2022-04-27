@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <h1 class="title">Projet : <span class="font-important">Formulaire de Compétence</span></h1>
+            <h1 class="title">Projet : <span class="font-important">Banqueroute</span></h1>
             <h3 class="subtitle">Challenge SIO2 - 2022</h3>
         </div>
         <div class="container">
@@ -9,15 +9,7 @@
                 Ce projet a été créé durant ma<span class="font-important"> seconde année de BTS SIO</span>.<br>
                 <br>
                 <span class="font-important">L'objectif de ce projet est de créer un portefeuille de compétence</span>, un site, où se trouvent toutes les compétences du BTS SIO. <br>
-                Les étudiants en SIO doivent <span class="font-important">inscrirent leur projets sur le site avec les savoirs et les indicateurs misent en oeuvres</span> dans celui-ci.<br>
-                Les compétences sont donc générées en fonction des savoirs et des indicateurs que l'étudiant à remplis.<br>
-                <br>
-                <span class="font-important">Ce projet n'étant pas encore terminé</span>, il reste des fonctionnalités à ajouter, tel que :
-                <ul>
-                    <li>la génération des compétences en fonction des savoirs et des indicateurs ;</li>
-                    <li>la génération d'un PDF avec toutes les compétences de l'étudiant ;</li>
-                    <li>un panel d'administration pour créer des comptes aux utilisateurs.</li>
-                </ul>
+                
             </p>
         </div>
         <Images :tab_Image="tab_Image" />

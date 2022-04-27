@@ -30,9 +30,19 @@ export default {
                     'url'  : 'Catif-2',
                     'team' : 'perso'
                 }, {
-                    'title_primary' : 'Formulaire de Compétence',
+                    'title_primary' : 'Banqueroute',
                     'title_secondary' : 'TP SIO2 - 2022',
-                    'url'  : 'Formulaire-De-Competence',
+                    'url'  : 'Banqueroute',
+                    'team' : 'study'
+                }, {
+                    'title_primary' : 'Formulaire de Compétence - C#',
+                    'title_secondary' : 'TP SIO2 - 2022',
+                    'url'  : 'Formulaire-De-Competence_CS',
+                    'team' : 'study'
+                }, {
+                    'title_primary' : 'Formulaire de Compétence - PHP',
+                    'title_secondary' : 'TP SIO2 - 2022',
+                    'url'  : 'Formulaire-De-Competence_PHP',
                     'team' : 'study'
                 }, {
                     'title_primary' : 'Parc Informatique',
