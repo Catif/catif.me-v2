@@ -48,17 +48,17 @@ export default {
                 }
             },
             tab_Image: {
-                1: "/study/Formulaire-De-Competence/1",
-                2: "/study/Formulaire-De-Competence/2",
-                3: "/study/Formulaire-De-Competence/3",
-                4: "/study/Formulaire-De-Competence/4",
-                5: "/study/Formulaire-De-Competence/5",
-                6: "/study/Formulaire-De-Competence/6",
-                7: "/study/Formulaire-De-Competence/7",
+                1: "/study/Formulaire-De-Competence_CS/1",
+                2: "/study/Formulaire-De-Competence_CS/2",
+                3: "/study/Formulaire-De-Competence_CS/3",
+                4: "/study/Formulaire-De-Competence_CS/4",
+                5: "/study/Formulaire-De-Competence_CS/5",
+                6: "/study/Formulaire-De-Competence_CS/6",
+                7: "/study/Formulaire-De-Competence_CS/7",
 
             },
             tab_Button: {
-                "site"   : "https://asci6.sms-formation.fr/competence/",
+                "site"   : "none",
                 "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
             }
         }

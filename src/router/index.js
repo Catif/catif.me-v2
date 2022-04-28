@@ -13,7 +13,7 @@ import Project from '@/views/Project.vue';
         import Study_Parc_Informatique from '@/views/projects/study/Parc-Informatique.vue';
         import Study_Formulaire_De_Competence_PHP from '@/views/projects/study/Formulaire-De-Competence_PHP.vue';
         import Study_Formulaire_De_Competence_CS from '@/views/projects/study/Formulaire-De-Competence_CS.vue';
-        import Banqueroute from '@/views/projects/study/Formulaire-De-Competence_CS.vue';
+        import Banqueroute from '@/views/projects/study/Banqueroute.vue';
 
         // Stage
         import Stage_eZHost from '@/views/projects/stage/eZHost.vue';
