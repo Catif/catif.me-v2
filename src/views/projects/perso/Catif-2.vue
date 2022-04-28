@@ -46,7 +46,7 @@ export default {
 
             },
             tab_Button: {
-                "site"   : "https://v2.catif.me",
+                "site"   : ["https://v2.catif.me", "url"],
                 "github" : "https://github.com/Catif/catif.me-v2"
             }
         }

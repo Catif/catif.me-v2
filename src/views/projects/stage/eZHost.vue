@@ -48,7 +48,7 @@ export default {
             },
             
             tab_Button: {
-                "site"   : "none",
+                "site"   : ["", "none"],
                 "github" : "none"
             }
         }

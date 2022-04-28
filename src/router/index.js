@@ -9,7 +9,7 @@ import Project from '@/views/Project.vue';
         import Perso_Catif_2 from '@/views/projects/perso/Catif-2.vue';
 
         // Etude
-        import Study_Jeu_des_Balles from '@/views/projects/study/Jeu-des-Balles.vue';
+        import Study_Jeu_de_Balles from '@/views/projects/study/Jeu-de-Balles.vue';
         import Study_Parc_Informatique from '@/views/projects/study/Parc-Informatique.vue';
         import Study_Formulaire_De_Competence_PHP from '@/views/projects/study/Formulaire-De-Competence_PHP.vue';
         import Study_Formulaire_De_Competence_CS from '@/views/projects/study/Formulaire-De-Competence_CS.vue';
@@ -42,7 +42,7 @@ const routes = [
         { path: '/projects/perso/Catif-2', component: Perso_Catif_2, meta: {title: 'Projets - Catif'}}, 
 
         // Study
-        { path: '/projects/study/Jeu-des-Balles', component: Study_Jeu_des_Balles, meta: {title: 'Projets - Catif'}}, 
+        { path: '/projects/study/Jeu-de-Balles', component: Study_Jeu_de_Balles, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Parc-Informatique', component: Study_Parc_Informatique, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Formulaire-De-Competence_PHP', component: Study_Formulaire_De_Competence_PHP, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/study/Formulaire-De-Competence_CS', component: Study_Formulaire_De_Competence_CS, meta: {title: 'Projets - Catif'}}, 

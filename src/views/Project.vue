@@ -10,6 +10,9 @@
                     <div v-if="project.title_secondary != ''">{{ project.title_secondary }}</div>
                 </div>
                 <img :src="'/img/projects/' + project.team + '/' + project.url + '-main.webp'">
+                <div class="list-tag">
+                    <span class="tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span>
+                </div>
             </router-link>
         </div>
     </div>
@@ -28,47 +31,56 @@ export default {
                     'title_primary' : 'Catif.me',
                     'title_secondary' : 'Version 2 - 2022',
                     'url'  : 'Catif-2',
-                    'team' : 'perso'
+                    'team' : 'perso',
+                    'tags'  : ['VueJS']
+                }, {
+                    'title_primary' : 'Formulaire de Compétence',
+                    'title_secondary' : 'TP SIO2 - 2022',
+                    'url'  : 'Formulaire-De-Competence_CS',
+                    'team' : 'study',
+                    'tags'  : ['C#']
+                }, {
+                    'title_primary' : 'Formulaire de Compétence',
+                    'title_secondary' : 'TP SIO2 - 2022',
+                    'url'  : 'Formulaire-De-Competence_PHP',
+                    'team' : 'study',
+                    'tags'  : ['PHP']
                 }, {
                     'title_primary' : 'Banqueroute',
                     'title_secondary' : 'TP SIO2 - 2022',
                     'url'  : 'Banqueroute',
-                    'team' : 'study'
-                }, {
-                    'title_primary' : 'Formulaire de Compétence - C#',
-                    'title_secondary' : 'TP SIO2 - 2022',
-                    'url'  : 'Formulaire-De-Competence_CS',
-                    'team' : 'study'
-                }, {
-                    'title_primary' : 'Formulaire de Compétence - PHP',
-                    'title_secondary' : 'TP SIO2 - 2022',
-                    'url'  : 'Formulaire-De-Competence_PHP',
-                    'team' : 'study'
+                    'team' : 'study',
+                    'tags'  : ['C#']
                 }, {
                     'title_primary' : 'Parc Informatique',
                     'title_secondary' : 'Challenge SIO2 - 2021',
                     'url'  : 'Parc-Informatique',
-                    'team' : 'study'
+                    'team' : 'study',
+                    'tags'  : ['PHP']
                 }, { 
                     'title_primary' : 'Catif.me',
                     'title_secondary' : 'Version 1 - 2021',
                     'url'  : 'Catif-1',
-                    'team' : 'perso'
+                    'team' : 'perso',
+                    'tags'  : ['PHP']
                 }, {
                     'title_primary' : 'eZHost',
                     'title_secondary' : 'Stage SIO1 - 2021',
                     'url'  : 'eZHost',
-                    'team' : 'stage'
+                    'team' : 'stage',
+                    'tags'  : ['VueJS']
                 }, { 
                     'title_primary' : 'eZHub',
                     'title_secondary' : 'Stage SIO1 - 2021',
                     'url'  : 'eZHub',
-                    'team' : 'stage'
+                    'team' : 'stage',
+                    'tags'  : ['VueJS']
                 }, { 
-                    'title_primary' : 'Jeu des balles',
+                    'title_primary' : 'Jeu de balles',
                     'title_secondary' : 'Challenge SIO1 - 2021',
-                    'url'  : 'Jeu-des-Balles',
-                    'team' : 'study'
+                    'url'  : 'Jeu-de-Balles',
+                    'team' : 'study',
+                    'tags'  : ['HTML']
                 }
             ]
         }
@@ -89,6 +101,8 @@ export default {
 }
 
 .box{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,4 +150,22 @@ export default {
     object-fit: cover;
 }
 
+.box .list-tag{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    display: flex;
+    gap: 10px;
+
+    font-size: 18px;
+}
+
+.tag{
+    padding: 2px 8px 0px 8px;
+
+    background: hsla(0, 0%, 0%, 0.8);
+    border: 1px solid var(--color-text-important);
+    border-radius: 13px;
+}
 </style>

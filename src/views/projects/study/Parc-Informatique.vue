@@ -60,7 +60,7 @@ export default {
                 5: "/study/Parc-Informatique/5",
             },
             tab_Button: {
-                "site"   : "https://projets.catif.me/etud_Parc-Informatique/",
+                "site"   : ["https://projets.catif.me/etud_Parc-Informatique/", "url"],
                 "github" : "none"
             }
         }

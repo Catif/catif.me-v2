@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <span class="nav-logo">Bradley BARBIER</span>
+        <router-link to="/" class="nav-logo">Bradley BARBIER</router-link>
         <div class="nav-items">
             <router-link to="/" class="nav-item hover-underline">Accueil</router-link>
             <router-link to="/projects" class="nav-item hover-underline">Projets</router-link>
@@ -34,7 +34,7 @@ nav a{
 
 .nav-logo{
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 400 !important;
 
     color: var(--color-text-important);
 }

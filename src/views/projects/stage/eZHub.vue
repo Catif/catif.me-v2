@@ -45,7 +45,7 @@ export default {
                 2: "/stage/eZHub/2"
             },
             tab_Button: {
-                "site"   : "https://hub.ezcorp.io",
+                "site"   : ["https://hub.ezcorp.io", "url"],
                 "github" : "none"
             }
         }

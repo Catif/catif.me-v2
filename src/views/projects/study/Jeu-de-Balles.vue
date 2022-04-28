@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <h1 class="title">Projet : <span class="font-important">Jeu des Balles</span></h1>
+            <h1 class="title">Projet : <span class="font-important">Jeu de Balles</span></h1>
             <h3 class="subtitle">Challenge SIO2 - 2021</h3>
         </div>
         <div class="container">
@@ -29,9 +29,9 @@ export default {
     data(){
         return {
             tab_Image: {
-                1: "/study/Jeu-des-Balles/1",
-                2: "/study/Jeu-des-Balles/2",
-                3: "/study/Jeu-des-Balles/3",
+                1: "/study/Jeu-de-Balles/1",
+                2: "/study/Jeu-de-Balles/2",
+                3: "/study/Jeu-de-Balles/3",
             },
             tab_Techno: {
                 "Techno": {
@@ -44,7 +44,7 @@ export default {
                 }
             },
             tab_Button: {
-                "site"   : "https://asci6.sms-formation.fr/Jeu_des_Balles/",
+                "site"   : ["https://asci6.sms-formation.fr/Jeu_des_Balles/", "url"],
                 "github" : "https://github.com/Catif/BTS-SIO1_Jeu-des-Balles"
             },
         }

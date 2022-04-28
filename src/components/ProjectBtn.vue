@@ -1,7 +1,7 @@
 <template>
-    <div class="btn" v-if="tab_Button.site != 'none'">
-        <a class="btn-project" :class="(tab_Button.github == 'none') ? 'alone' : ''" :href="tab_Button.site" target="_blank">Voir le site du projet</a>
-        <a v-if="tab_Button.github != 'none'" class="btn-github" :href="tab_Button.github" target="_blank"><fa :icon="['fab', 'github']" /></a>
+    <div class="btn" v-if="tab_Button.site[1] != 'none' && tab_Button.github != 'none'">
+        <a class="btn-project" :class="(tab_Button.github == 'none') ? 'alone' : ''" :href="tab_Button.site[0]" target="_blank">{{ text_button }}</a>
+        <a v-if="tab_Button.github != 'none'"  class="btn-github" :class="(tab_Button.site[1] == 'none') ? 'alone' : ''" :href="tab_Button.github" target="_blank"><fa :icon="['fab', 'github']" /></a>
     </div>
 </template>
 
@@ -16,10 +16,22 @@ export default {
         tab_Button : {
             type: Object,
             default: {
-                default: 'Aucune'
+                default: 'Aucune',
             }
         }
     },
+    data(){
+        return {
+            text_button: 'Voir le site du projet',
+        }
+    },
+    mounted(){
+        if(this.tab_Button.site[1] == 'url'){
+            this.text_button = 'Voir le site'
+        } else if (this.tab_Button.site[1] == 'file'){
+            this.text_button = 'Télécharger le projet'
+        }
+    }
 }
 </script>
 

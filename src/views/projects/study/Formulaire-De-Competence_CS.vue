@@ -8,16 +8,8 @@
             <p>
                 Ce projet a été créé durant ma<span class="font-important"> seconde année de BTS SIO</span>.<br>
                 <br>
-                <span class="font-important">L'objectif de ce projet est de créer un portefeuille de compétence</span>, un site, où se trouvent toutes les compétences du BTS SIO. <br>
-                Les étudiants en SIO doivent <span class="font-important">inscrirent leur projets sur le site avec les savoirs et les indicateurs misent en oeuvres</span> dans celui-ci.<br>
-                Les compétences sont donc générées en fonction des savoirs et des indicateurs que l'étudiant à remplis.<br>
-                <br>
-                <span class="font-important">Ce projet n'étant pas encore terminé</span>, il reste des fonctionnalités à ajouter, tel que :
-                <ul>
-                    <li>la génération des compétences en fonction des savoirs et des indicateurs ;</li>
-                    <li>la génération d'un PDF avec toutes les compétences de l'étudiant ;</li>
-                    <li>un panel d'administration pour créer des comptes aux utilisateurs.</li>
-                </ul>
+                <span class="font-important">L'objectif de ce projet est d'afficher les compétences du BTS SIO</span>, un logiciel, où se trouvent toutes les compétences, les savoirs et les indicateurs.<br>
+                <span class="font-important">L'utilisateur peut choisir la base de donnée qu'il souhaite utiliser</span> comme <span class="font-important">Azure DataBase</span> (Personnel ou celui de la classe), <span class="font-important">MySQL</span> (local ou PlanetHoster).
             </p>
         </div>
         <Images :tab_Image="tab_Image" />
@@ -37,14 +29,10 @@ export default {
         return {
             tab_Techno: {
                 "Techno": {
-                    1: { "name": "PHP", "file": "php" },
-                    2: { "name": "PHPMailer", "file": "phpmailer" },
-                    3: { "name": "CSS Vanilla", "file": "css" },
-                    4: { "name": "MySQL", "file": "mysql" }
+                    1: { "name": "C#", "file": "cs" }
                 },
                 "Software": {
-                    1: { "name": "Visual Studio Code", "file": "visual-code" },
-                    2: { "name": "WinDesign", "file": "windesign" }
+                    1: { "name": "Visual Studio Community", "file": "visual-community" },
                 }
             },
             tab_Image: {
@@ -52,14 +40,10 @@ export default {
                 2: "/study/Formulaire-De-Competence_CS/2",
                 3: "/study/Formulaire-De-Competence_CS/3",
                 4: "/study/Formulaire-De-Competence_CS/4",
-                5: "/study/Formulaire-De-Competence_CS/5",
-                6: "/study/Formulaire-De-Competence_CS/6",
-                7: "/study/Formulaire-De-Competence_CS/7",
-
             },
             tab_Button: {
-                "site"   : "none",
-                "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
+                "site"   : ["/doc/projet/BTS-SIO2_Formulaire-de-Competence_Csharp.rar", "file"],
+                "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_Csharp"
             }
         }
     }

@@ -29,29 +29,24 @@ export default {
         return {
             tab_Techno: {
                 "Techno": {
-                    1: { "name": "PHP", "file": "php" },
-                    2: { "name": "PHPMailer", "file": "phpmailer" },
-                    3: { "name": "CSS Vanilla", "file": "css" },
-                    4: { "name": "MySQL", "file": "mysql" }
+                    1: { "name": "C#", "file": "cs" }
                 },
                 "Software": {
-                    1: { "name": "Visual Studio Code", "file": "visual-code" },
-                    2: { "name": "WinDesign", "file": "windesign" }
+                    1: { "name": "Visual Studio Community", "file": "visual-community" },
                 }
             },
             tab_Image: {
-                1: "/study/Formulaire-De-Competence/1",
-                2: "/study/Formulaire-De-Competence/2",
-                3: "/study/Formulaire-De-Competence/3",
-                4: "/study/Formulaire-De-Competence/4",
-                5: "/study/Formulaire-De-Competence/5",
-                6: "/study/Formulaire-De-Competence/6",
-                7: "/study/Formulaire-De-Competence/7",
-
+                1: "/study/Banqueroute/1",
+                2: "/study/Banqueroute/2",
+                3: "/study/Banqueroute/3",
+                4: "/study/Banqueroute/4",
+                5: "/study/Banqueroute/5",
+                6: "/study/Banqueroute/6",
+                7: "/study/Banqueroute/7",
             },
             tab_Button: {
-                "site"   : "none",
-                "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
+                "site"   : ["/doc/projet/BTS-SIO2_Banqueroute.rar", "file"],
+                "github" : "https://github.com/Catif/BTS-SIO2_TP-BanqueRoute"
             }
         }
     }

@@ -45,7 +45,7 @@ export default {
                 5: "/perso/Catif-1/5",
             },
             tab_Button: {
-                "site"   : "https://v1.catif.me",
+                "site"   : ["https://v1.catif.me", ""],
                 "github" : "none"
             }
         }
