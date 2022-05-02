@@ -29,7 +29,8 @@ export default {
         return {
             tab_Techno: {
                 "Techno": {
-                    1: { "name": "C#", "file": "cs" }
+                    1: { "name": "C#", "file": "cs" },
+                    2: { "name": "Azure Database SQL", "file": "azure-sql" }
                 },
                 "Software": {
                     1: { "name": "Visual Studio Community", "file": "visual-community" },

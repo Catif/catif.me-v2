@@ -42,14 +42,14 @@ export default {
         return {
             tab_Techno: {
                 "Techno": {
-                    1: { "name": "MySQL", "file": "mysql" },
+                    1: { "name": "PHP", "file": "php" },
                     2: { "name": "Bootstrap", "file": "bootstrap" },
-                    3: { "name": "PHP", "file": "php" }
+                    3: { "name": "MySQL", "file": "mysql" },
                 },
                 "Software": {
-                    1: { "name": "Visual Studio Code", "file": "visual-code" },
+                    1: { "name": "WinDesign", "file": "windesign" },
                     2: { "name": "Figma", "file": "figma" },
-                    3: { "name": "WinDesign", "file": "windesign" }
+                    3: { "name": "Visual Studio Code", "file": "visual-code" },
                 }
             },
             tab_Image: {
