@@ -10,7 +10,7 @@
 
         <div class="bloc-Career">
             <div class="list-btn">
-                <h2 class="font-important" :class="(showPro) ? 'active' : ''" @click="setShowProToTrue()">Professionelle</h2>
+                <h2 class="font-important" :class="(showPro) ? 'active' : ''" @click="setShowProToTrue()">Professionel</h2>
                 <h2 class="font-important" :class="(showSchool) ? 'active' : ''" @click="setShowSchoolToTrue()">Scolaire</h2>
                 <h2 class="font-important" :class="(showCertif) ? 'active' : ''" @click="setShowCertifToTrue()">Certification</h2>
             </div>
@@ -56,13 +56,11 @@
 
                 <div id="Certification" class="items" v-else-if="showCertif">
                     <a class="item" v-for="(element, id) in tab_cert" :key="id" target="_blank" :href="element.certif_url">
-                        <img :src="'/img/certif/' + element.certif + '.webp'">
+                        <img :src="element.certif_img">
 
                         <div class="item-content">
                             <span class="date font-important">{{ element.date }}</span>
-                            <span class="utilites"><span class="font-important">{{ element.certif }}</span><span v-if="element.certif_score != ''">
-                                - {{ element.certif_score }} points<span v-if="element.certif_score_max != ''"> sur {{ element.certif_score_max }}</span>
-                                </span>
+                            <span class="utilites"><span class="font-important">{{ element.certif }}</span><span v-if="element.certif_score != ''"> - {{ element.certif_score }}</span>
                             </span>
                             <span class="description" v-if="element.location != ''">Sur <u>{{ element.location }}</u></span>
                         </div>
@@ -200,10 +198,17 @@ export default {
                 {
                     date: 'Avril 2022',
                     certif: 'Pix',
-                    certif_score: '582',
-                    certif_score_max: '768',
+                    certif_score: '582 points sur 768',
                     certif_url: '/doc/certif/attestation-pix-20220406.pdf',
+                    certif_img: '/img/certif/pix.webp',
                     location: 'app.pix.fr'
+                }, {
+                    date: 'Juillet 2021',
+                    certif: 'MOOC ANSSI',
+                    certif_score: 'Score moyen de 89%',
+                    certif_url: '/doc/certif/attestation-anssi-20210701.pdf',
+                    certif_img: '/img/certif/anssi.webp',
+                    location: 'secnumacademie.gouv.fr'
                 },
             ],
         }
@@ -215,12 +220,18 @@ export default {
 
 
 
-<style>
+<style scoped>
+.container{
+    margin-bottom: 0;
+}
 .bloc-Career{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    width: 1000px;
+
+    width: 95%;
+    max-width: 1000px;
+
     margin: 30px auto 0px auto;
 }
 
@@ -265,11 +276,10 @@ export default {
     padding: 5px 10px;
 }
 
-
 .bloc-Career .items .item{
     font-size: 18px;
 
-    width: 650px;
+    width: 100%;
     padding: 15px 20px;
     border-left: 1px solid var(--color-text-important);
     border-bottom: 1px solid var(--color-text-important);
@@ -316,15 +326,16 @@ export default {
 
 #Certification .item {
     display: flex;
-    width: 650px;
-    margin-left:0px;
+    width: 100%;
+    margin-left: 0px;
     border-top: 1px solid var(--color-text-important);
+
+    background-color: var(--color-container-background);
 
     transition: all .1s ease;
 }
 #Certification .item:hover{
-    width: 645px;
-    margin-left:5px;
+    background-color: hsl(210, 100%, 10%);
 }
 
 #Certification .item img{
@@ -358,5 +369,28 @@ export default {
 
 .fade-career-leave-to{
     transform: translateY(50px);
+}
+
+
+@media screen and (max-width: 768px){
+    .bloc-Career{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 15px;
+    }
+    .list-btn{
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+    }
+    .list-btn h2{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bloc-Career .items{
+        width: 100%;
+    }
 }
 </style>

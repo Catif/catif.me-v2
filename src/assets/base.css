@@ -70,7 +70,8 @@ li::marker{
   align-items: center;
   flex-direction: column;
 
-  width: 1000px;
+  width: 95%;
+  max-width: 1000px;
   
   margin: 30px auto;
   padding: 20px;
@@ -152,4 +153,10 @@ li::marker{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:active {
   background: hsl(210, 25%, 40%); 
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  
 }

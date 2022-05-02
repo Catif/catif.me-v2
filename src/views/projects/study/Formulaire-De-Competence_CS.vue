@@ -9,7 +9,8 @@
                 Ce projet a été créé durant ma<span class="font-important"> seconde année de BTS SIO</span>.<br>
                 <br>
                 <span class="font-important">L'objectif de ce projet est d'afficher les compétences du BTS SIO</span>, un logiciel, où se trouvent toutes les compétences, les savoirs et les indicateurs.<br>
-                <span class="font-important">L'utilisateur peut choisir la base de donnée qu'il souhaite utiliser</span> comme <span class="font-important">Azure DataBase</span> (Personnel ou celui de la classe), <span class="font-important">MySQL</span> (local ou PlanetHoster).
+                <span class="font-important">L'utilisateur peut choisir la base de donnée qu'il souhaite utiliser</span> comme <span class="font-important">Azure SQL DataBase</span> (Personnel ou celui de la classe), <span class="font-important">MySQL</span> (local ou PlanetHoster).<br>
+                <span class="font-important">Son réel objectif</span> était pour nous entrainer à nous connecter à différentes base de données tel que Azure SQL DataBase à partir de C#.
             </p>
         </div>
         <Images :tab_Image="tab_Image" />

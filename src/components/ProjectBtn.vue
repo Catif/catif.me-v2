@@ -49,14 +49,14 @@ export default {
     margin: auto;
     margin-top: 50px;
 
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     height: 100px;
 
     background: var(--color-container-background);
     
     border: 1px solid  var(--color-text-important);
     border-radius: 20px;
-
 }
 
 .btn-project{

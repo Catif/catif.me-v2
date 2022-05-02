@@ -3,7 +3,7 @@
         <h1 class="title">Bienvenue sur mon <span class="font-important">Portfolio</span> !</h1>
         <div class="content">
             <div class="raw">
-                <p class="column text-justify flex justify-center flex-column">
+                <p class="column flex justify-center flex-column">
                     Sur ce site, vous trouverez :
                     <ul>
                         <li><router-link to="/projects" class="link">mes divers projets</router-link> ;</li>
@@ -108,6 +108,7 @@ export default {
     color: var(--color-text-important);
     top: 0px;
     left: 90px;
+    width:auto;
 }
 
 @keyframes player {
@@ -122,5 +123,15 @@ export default {
     50% {left: 7px; top: 150px}
     75% {left: 175px; top: 90px}
     100% {left: 7px; top: 30px}
+}
+
+
+@media only screen and (max-width : 600px) {
+  .game-pong{
+    display: none;
+  }
+  .column{
+      width: 100%;
+  }
 }
 </style>

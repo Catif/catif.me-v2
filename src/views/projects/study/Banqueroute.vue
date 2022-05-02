@@ -8,7 +8,8 @@
             <p>
                 Ce projet a été créé durant ma<span class="font-important"> seconde année de BTS SIO</span>.<br>
                 <br>
-                <span class="font-important">L'objectif de ce projet est de créer un portefeuille de compétence</span>, un site, où se trouvent toutes les compétences du BTS SIO. <br>
+                <span class="font-important">L'objectif de ce projet est de créer une application de banque</span>, un logiciel, où il serait possible de gérer les comptes de différentes personnes.<br>
+                Les actions possibles sont variées, <span class="font-important">il est possible d'effectuer des créations de compte, virement entre deux personnes, dépôt/retrait d'argent et autre...</span>
                 
             </p>
         </div>

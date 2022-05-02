@@ -42,9 +42,11 @@ export default {
     },
     methods: {
         openModal(id){
-            this.imageModal = id
-            document.body.style.overflowY= "hidden";
-            this.$el.querySelector('.modal').classList.add('active')
+            if(window.matchMedia("(min-width:1100px)").matches){
+                this.imageModal = id
+                document.body.style.overflowY= "hidden";
+                this.$el.querySelector('.modal').classList.add('active')
+            }
         },
         closeModal(event){
             var modal = this.$el.querySelector('.modal');
@@ -65,7 +67,8 @@ export default {
     display: flex;
     gap: 10px;
     
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     
     border: 1px solid  var(--color-text-important);
     border-radius: 10px;
@@ -146,8 +149,10 @@ export default {
     justify-content: center;
     align-items: center;
 
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: calc(100% - 250px);
+    max-width: 1304px;
+
     transform: scale(0);
 }
 
@@ -182,7 +187,7 @@ export default {
 
     width: 100px;
     height: 100px;
-    margin: 0 -150px;
+    margin: 0 -120px;
 
     background-color: var(--color-container-background);
     border: 1px solid  var(--color-text-important);
@@ -206,7 +211,7 @@ export default {
 .modal-image{
     background-color: hsl(210, 100%, 10%);
     height: 100%;
-    max-width: 1532px;
+    width: 100%;
     
     border-radius: 20px;
     border: 1px solid  var(--color-text-important);
