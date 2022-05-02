@@ -73,7 +73,8 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
-    document.title = to.meta.title;
+    document.title = to.meta.title
+    window.scrollTo({top: 0, behavior: 'smooth'})
 })
 
 export default router;

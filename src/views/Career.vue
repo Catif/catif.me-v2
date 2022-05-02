@@ -227,10 +227,10 @@ export default {
 .bloc-Career{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 
     width: 95%;
     max-width: 1000px;
+    gap: 40px;
 
     margin: 30px auto 0px auto;
 }
@@ -274,6 +274,7 @@ export default {
     align-items: flex-start;
 
     padding: 5px 10px;
+    width: 550px;
 }
 
 .bloc-Career .items .item{

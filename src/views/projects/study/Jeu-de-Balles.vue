@@ -48,6 +48,6 @@ export default {
                 "github" : "https://github.com/Catif/BTS-SIO1_Jeu-des-Balles"
             },
         }
-    }
+    },
 }
 </script>
