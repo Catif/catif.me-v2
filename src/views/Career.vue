@@ -13,6 +13,7 @@
                 <h2 class="font-important" :class="(showPro) ? 'active' : ''" @click="setShowProToTrue()">Professionel</h2>
                 <h2 class="font-important" :class="(showSchool) ? 'active' : ''" @click="setShowSchoolToTrue()">Scolaire</h2>
                 <h2 class="font-important" :class="(showCertif) ? 'active' : ''" @click="setShowCertifToTrue()">Certification</h2>
+                <a href="/doc/other/Synthèse_BARBIER-Bradley.pdf" class="font-important" target="_blank">Télécharger le tableau de synthèse E4</a>
             </div>
 
             <transition name="fade-career" mode="out-in" appear>
@@ -221,16 +222,13 @@ export default {
 
 
 <style scoped>
-.container{
-    margin-bottom: 0;
-}
 .bloc-Career{
     display: flex;
     justify-content: space-between;
 
     width: 95%;
     max-width: 1000px;
-    gap: 40px;
+    gap: 20px;
 
     margin: 30px auto 0px auto;
 }
@@ -242,14 +240,16 @@ export default {
 }
 
 
-.list-btn h2{
+.list-btn .font-important{
     display: flex;
     justify-content: flex-end;
 
-    width: 250px;
-    height: 79px;
+    width: 270px;
+    min-height: 79px;
     padding: 20px;
 
+    font-size: 24px;
+    text-align: center;
 
     background-color: var(--color-container-background);
     border-radius: 20px;
@@ -258,7 +258,7 @@ export default {
     cursor: pointer;
     transition: all .4s ease;
 }
-.list-btn h2:hover{
+.list-btn .font-important:hover{
     color: hsl(210, 100%, 80%);
 }
 
@@ -385,7 +385,7 @@ export default {
         gap: 10px;
         width: 90%;
     }
-    .list-btn h2{
+    .list-btn .font-important{
         justify-content: center;
         width: 100%;
     }
