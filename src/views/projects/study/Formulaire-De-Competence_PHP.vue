@@ -58,7 +58,7 @@ export default {
 
             },
             tab_Button: {
-                "site"   : ["https://asci6.sms-formation.fr/competence/", "url"],
+                "site"   : ["https://projets.catif.me/etud_Formulaire-de-Competence/", "url"],
                 "github" : "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP"
             }
         }
