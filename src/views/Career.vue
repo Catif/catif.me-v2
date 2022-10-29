@@ -13,7 +13,7 @@
                 <h2 class="font-important" :class="(showPro) ? 'active' : ''" @click="setShowProToTrue()">Professionel</h2>
                 <h2 class="font-important" :class="(showSchool) ? 'active' : ''" @click="setShowSchoolToTrue()">Scolaire</h2>
                 <h2 class="font-important" :class="(showCertif) ? 'active' : ''" @click="setShowCertifToTrue()">Certification</h2>
-                <a href="/doc/other/Synthèse_BARBIER-Bradley.pdf" class="font-important" target="_blank">Télécharger le tableau de synthèse E4</a>
+                <a href="/doc/other/CV_Bradley-Barbier_2022.pdf" class="font-important" target="_blank">Télécharger mon CV</a>
             </div>
 
             <transition name="fade-career" mode="out-in" appear>
@@ -124,8 +124,8 @@ export default {
                     desc: ''
                 }, {
                     date: 'Juin 2021',
-                    enterprise: 'eZCorporation',
-                    enterprise_url: 'https://ezcorp.io',
+                    enterprise: 'eZCorporation (Renommé Alpasso)',
+                    enterprise_url: 'https://alpasso.fr/',
                     location: 'Distanciel',
                     role: 'Développeur Web',
                     text_second: 'Stage de BTS SIO première année',
@@ -156,17 +156,17 @@ export default {
 
             tab_school: [
                 {
-                    date_start: '(Prévu) : 2022',
-                    date_end: '2024',
-                    school_name: 'Cégép Rivière du Loup',
-                    school_url: 'https://www.cegeprdl.ca',
-                    location: 'Rivière du Loup, QC',
-                    type: 'DEC Informatique',
+                    date_start: '2022',
+                    date_end: '2023 | (en cours)',
+                    school_name: 'IUT Nancy-Charlemagne',
+                    school_url: 'https://iut-charlemagne.univ-lorraine.fr/',
+                    location: 'Nancy, FR',
+                    type: 'LP CIASIE',
                     mention: '',
                     desc: ''
                 }, {
                     date_start: '2020',
-                    date_end: '(En cours)',
+                    date_end: '2022',
                     school_name: 'Lycée Frédéric Chopin',
                     school_url: 'http://www.lycee-chopin.fr',
                     location: 'Nancy, FR',
@@ -274,7 +274,8 @@ export default {
     align-items: flex-start;
 
     padding: 5px 10px;
-    width: 550px;
+
+    width: 600px;
 }
 
 .bloc-Career .items .item{
@@ -288,8 +289,13 @@ export default {
     background-color: var(--color-container-background);
 }
 .bloc-Career .items .item:first-child{
-    border-top: 1px solid var(--color-text-important)
+    border-top: 1px solid var(--color-text-important);
+    border-radius: 10px 0px 0px 0px;
 }
+.bloc-Career .items .item:last-child{
+    border-radius: 0px 0px 0px 10px;
+}
+
 .date{
     font-size: 22px;
 }
