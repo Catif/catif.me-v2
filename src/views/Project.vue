@@ -28,6 +28,12 @@ export default {
         return {
             projects: [
                 {
+                    'title_primary' : 'Tips de Catif',
+                    'title_secondary' : 'Version 1 - 2022',
+                    'url'  : 'Tips-de-Catif',
+                    'team' : 'perso',
+                    'tags'  : ['VueJS']
+                }, {
                     'title_primary' : 'Catif.me',
                     'title_secondary' : 'Version 2 - 2022',
                     'url'  : 'Catif-2',

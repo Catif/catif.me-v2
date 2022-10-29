@@ -7,6 +7,7 @@ import Project from '@/views/Project.vue';
         // Perso
         import Perso_Catif_1 from '@/views/projects/perso/Catif-1.vue';
         import Perso_Catif_2 from '@/views/projects/perso/Catif-2.vue';
+        import Perso_Tips_de_Catif from '@/views/projects/perso/Tips-de-Catif.vue';
 
         // Etude
         import Study_Jeu_de_Balles from '@/views/projects/study/Jeu-de-Balles.vue';
@@ -40,6 +41,7 @@ const routes = [
         // Perso
         { path: '/projects/perso/Catif-1', component: Perso_Catif_1, meta: {title: 'Projets - Catif'}}, 
         { path: '/projects/perso/Catif-2', component: Perso_Catif_2, meta: {title: 'Projets - Catif'}}, 
+        { path: '/projects/perso/Tips-de-Catif', component: Perso_Tips_de_Catif, meta: {title: 'Projets - Catif'}}, 
 
         // Study
         { path: '/projects/study/Jeu-de-Balles', component: Study_Jeu_de_Balles, meta: {title: 'Projets - Catif'}}, 
