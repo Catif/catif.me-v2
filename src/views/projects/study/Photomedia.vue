@@ -56,7 +56,7 @@ export default {
 			},
 			tab_Button: {
 				site: ["", "none"],
-				github: "https://github.com/Catif/BTS-SIO2_Formulaire-de-Competence_PHP",
+				github: "https://github.com/Catif/LP1-CIASIE_Atelier1",
 			},
 		};
 	},
